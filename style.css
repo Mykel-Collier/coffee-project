@@ -8,9 +8,12 @@
 
     margin: .5em 1em;
     color: grey;
-
 }
 
 h3 {
     text-align: center;
+}
+
+label {
+    font-weight: bold;
 }
