@@ -8,12 +8,16 @@
 </head>
 <body>
     <div class="container-fluid">
+
+
         <div class="row">
             <h1 class="mx-auto">Coffee!</h1>
         </div>
         <hr>
 
+        <!--Row everything is in-->
         <div class="row">
+
             <div id="coffees" class="col-6">
             </div>
 
@@ -24,9 +28,9 @@
 
                     <select class="form-control" id="roast-selection">
                         <!--<option selected>all</option>-->
-                        <option>Light</option>
-                        <option>Medium</option>
-                        <option>Dark</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
                     </select>
 
                     <label for="coffee_name">Coffee Name</label>
@@ -34,19 +38,19 @@
                     <input class="form-control" type="text" id="coffee_name">
                     <br>
 
-                    <input class="btn btn-outline-primary btn-block" id="submit" type="submit">
+                    <input class="btn btn-outline-primary btn-block" type="submit">
                 </form>
                 <hr>
                 <h3 class="py-2">Add a Coffee</h3>
 
                 <form class>
-                    <label for="roast-selection_2">Roast Selection</label>
+                    <label for="new_roast">Roast Selection</label>
                     <br>
 
-                    <select class="form-control" id="roast-selection_2">
-                        <option>Light</option>
-                        <option>Medium</option>
-                        <option>Dark</option>
+                    <select class="form-control" id="new_roast">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
                     </select>
 
                     <label for="new_coffee_name">Coffee Name</label>
@@ -54,7 +58,7 @@
                     <input class="form-control" type="text" id="new_coffee_name">
                     <br>
 
-                    <input class="btn btn-outline-primary btn-block" id="submit2" type="submit" />
+                    <input class="btn btn-outline-primary btn-block" id="add_coffee" type="button" value="Submit"/>
                 </form>
             </div>
         </div>
