@@ -13,21 +13,27 @@
         </div>
         <hr>
 
-        <form>
-            <label for="roast-selection"></label>
+
+<div class="row">
+        <div id="coffees" class="col-6">
+        </div>
+
+
+        <form class="col-6">
+            <label for="roast-selection">Roast Selection</label>
             <select id="roast-selection">
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
             </select>
+
+            <label for="coffee_name">Coffee Name</label>
+            <input type="text" id="coffee_name">
+
             <input id="submit" type="submit" />
         </form>
+</div>
 
-        <div id="coffees">
-            <h2>Test text</h2>
-            <h2>Test text 2</h2>
-            <h2>test text 3</h2>
-        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
