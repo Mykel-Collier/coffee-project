@@ -2,7 +2,7 @@
 
 function renderCoffee(coffee) {
     var html = '<div>';
-    html += '<div class=" col-lg-6 float-right coffee_div"><span class="coffee_name">' + coffee.name + '</span>';
+    html += '<div class=" col-lg-6 float-left coffee_div"><span class="coffee_name">' + coffee.name + '</span>';
     html += '<span class="coffee_roast">' + coffee.roast + '</span></div>';
     html += '</div>';
 
