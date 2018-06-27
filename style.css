@@ -21,3 +21,33 @@ label {
 .coffee_div{
     text-align: center;
 }
+
+.jumbotron {
+    background-image: url("coffee-571245571.jpg");
+    opacity: 0.9;
+
+}
+
+.heading-bg-container {
+    background-color: rgba(35, 127, 235, .9);
+    /*opacity: 0.75;*/
+    display: inline-block;
+}
+
+.display-4, .lead {
+    color: white;
+    opacity: 1;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .heading-bg-container {
+        display: block;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
