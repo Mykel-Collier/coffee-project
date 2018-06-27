@@ -2,7 +2,7 @@
 
 function renderCoffee(coffee) {
     var html = '<div>';
-    html += '<div class="col-6 float-left"><span class="coffee_name">' + coffee.name + '</span>';
+    html += '<div class=" col-lg-6 float-right coffee_div"><span class="coffee_name">' + coffee.name + '</span>';
     html += '<span class="coffee_roast">' + coffee.roast + '</span></div>';
     html += '</div>';
 
@@ -17,6 +17,12 @@ function renderCoffees(coffees) {
     return html;
 }
 
+
+function click_add(e) {
+
+    add_coffee();
+    updateCoffees(e);
+}
 
 function add_coffee(){
 
@@ -39,7 +45,7 @@ function updateCoffees(e) {
 
     if(coffee_name === ""){
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
+        if (coffee.roast === selectedRoast || selectedRoast === "all") {
             filteredCoffees.push(coffee);
         }
     })
@@ -84,5 +90,5 @@ tbody.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('change', updateCoffees);
 coffee_name.addEventListener('input', updateCoffees);
-submitButton.addEventListener('click', add_coffee);
-submitButton.addEventListener('click', updateCoffees);
+
+submitButton.addEventListener('click', click_add);
