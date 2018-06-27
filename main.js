@@ -58,7 +58,7 @@ function updateCoffees(e) {
        }))
     }
 
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    coffee_name.innerHTML = renderCoffees(filteredCoffees);
 
 }
 
