@@ -18,9 +18,7 @@ label {
     font-weight: bold;
 }
 
-.coffee_div{
-    text-align: center;
-}
+
 
 .jumbotron {
     background-image: url("coffee-571245571.jpg");
@@ -48,6 +46,10 @@ label {
     }
 
     h2 {
+        text-align: center;
+    }
+
+    .coffee_div{
         text-align: center;
     }
 }
